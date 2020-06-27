@@ -15,6 +15,7 @@ namespace MVC_Start
     public static void Main(string[] args)
     {
       BuildWebHost(args).Run();
+            //Manoj is a very smart person
     }
 
     public static IWebHost BuildWebHost(string[] args) =>
