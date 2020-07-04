@@ -19,7 +19,15 @@ namespace MVC_Start.Controllers
       return View();
     }
 
-    public IActionResult Contact()
+        public IActionResult Groupclassexcercise()
+        {
+            return View();
+        }
+
+
+
+
+        public IActionResult Contact()
     {
       GuestContact contact = new GuestContact();
 
@@ -27,18 +35,7 @@ namespace MVC_Start.Controllers
       contact.Email = "vremela@usf.edu";
       contact.Phone = "732-668-5142";
 
-      
-      /* alternate syntax to initialize object 
-      GuestContact contact2 = new GuestContact
-      {
-        Name = "Manish Agrawal",
-        Email = "magrawal@usf.edu",
-        Phone = "813-974-6716"
-      };
-      */
-
-      //ViewData["Message"] = "Your contact page.";
-
+   
       return View(contact);
     }
 
